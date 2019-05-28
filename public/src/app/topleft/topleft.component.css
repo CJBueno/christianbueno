@@ -1,0 +1,160 @@
+p {
+    margin: 0;
+}
+hr {
+    margin-top: 8px; 
+    margin-bottom: 8px;
+    border-top: 1px dotted rgb(119, 119, 119);
+}
+.quadText {
+    font-family: 'EB Garamond', serif;
+    color: rgb(30,114,93);
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+.tweezTextOverflow, .fakeTextOverflow, .nsaTextOverflow{
+    font-family: 'Montserrat', sans-serif;
+    display: none;
+    font-size: 0.5rem;
+    text-align: left;
+    padding: 0px 5px;
+    height: 80px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.techs {
+    font-size: 0.8rem;
+}
+.fillText {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.6em;
+    margin: 0;
+    color: lightslategray;
+}
+.tweezerStatic {
+    border: 3px solid white;
+    border-radius: 2px;
+    background-image: url('../../assets/images/tweezerthumb.png');
+    background-size: 100%;
+    width: 100%;
+    height: 150px;
+}
+.tweezerStatic:hover {
+    background-image: url('../../assets/images/tweezerhover.gif');
+}
+.nsaStatic {
+    border: 3px solid white;
+    border-radius: 2px;
+    background-image: url('../../assets/images/nsathumb.png');
+    background-size: 100%;
+    width: 100%;
+    height: 150px;
+}
+.nsaStatic:hover {
+    background-image: url('../../assets/images/nsahover.gif');
+}
+button {
+    height: 18px;
+    width: 40%;
+    font-size: 12px;
+    padding: 0;
+}
+
+/* Vertical Mobile Browsing */
+@media only screen and (max-width: 480px){
+    hr {
+        margin-top: 2px; 
+        margin-bottom: 2px;
+    }
+    .prof-crop {
+        margin-left: 158px;
+    }
+    .tweezerStatic {
+        background-image: url('../../assets/images/tweezerhover.gif');
+        height: 83px;
+    }
+    .nsaStatic {
+        background-image: url('../../assets/images/nsahover.gif');
+        height: 83px;
+    }
+    .hideTweezBtn, .hideFakeBtn, .hideNsaBtn {
+        display: none;
+    }
+}
+/* Medium Browser */
+@media only screen and (min-width: 481px) and (max-width: 991px ){
+    .inline {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+    }
+    .wideScreen {
+        margin-bottom: 10px;
+    }
+    .appPic {
+        width: 100%;
+    }
+    .showTweezBtn, .hideTweezBtn, .showFakeBtn, .hideFakeBtn, .showNsaBtn, .hideNsaBtn {
+        display: none;
+    }
+    .tweezTextOverflow, .fakeTextOverflow, .nsaTextOverflow {
+        display: block;
+        overflow-y: scroll;
+    }
+    .nsaStatic {
+        height: 95px;
+    }
+}
+
+/* Wide Browser */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .inline {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+    }
+    .wideScreen {
+        margin-bottom: 10px;
+    }
+    .appPic {
+        width: 100%;
+    }
+    .showTweezBtn, .hideTweezBtn, .showFakeBtn, .hideFakeBtn, .showNsaBtn, .hideNsaBtn {
+        display: none;
+    }
+    .tweezTextOverflow, .fakeTextOverflow, .nsaTextOverflow {
+        display: inline-block;
+        overflow: visible;
+        font-size: 0.7em;
+    }
+    .nsaStatic {
+        height: 130px;
+    }
+}
+
+/* Full Wide Browser */
+@media only screen and (min-width: 1200px){
+    .inline {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+    }
+    .wideScreen {
+        margin-bottom: 10px;
+    }
+    .appPic {
+        width: 100%;
+    }
+    .tweezDesc, .fakeDesc, .nsaDesc {
+        display: block;
+    }
+    .showTweezBtn, .hideTweezBtn, .showFakeBtn, .hideFakeBtn, .showNsaBtn, .hideNsaBtn {
+        display: none;
+    }
+    .tweezTextOverflow, .fakeTextOverflow, .nsaTextOverflow {
+        display: inline-block;
+        overflow: visible;
+        font-size: 0.85em;
+        margin-bottom: 10px;
+    }
+}

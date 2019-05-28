@@ -1,0 +1,15 @@
+.quadTitle {
+    font-family: 'EB Garamond', serif;
+    margin-top: 25px; 
+    color: rgb(30,114,93);
+}
+.fillText {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85em;
+}
+.contactButtons {
+    margin-top: 1.5rem;
+}
+button {
+    width: 120px;
+}

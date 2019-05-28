@@ -1,0 +1,95 @@
+#main {
+    height: 800px;
+}
+.topHem {
+    height: 60%;
+}
+.middle {
+    position: absolute;
+}
+.bottomHem {
+    height: 40%;
+}
+.quadrant {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 2px solid whitesmoke;
+}
+.prof-crop {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid whitesmoke;
+    background-color: lightgrey;
+    bottom: -50px;
+    z-index: 2;
+}
+#me {
+    position: relative;
+    max-width: 100%;
+}
+.topLeft {
+    animation: fadein 1.5s;
+    -webkit-animation: fadein 3s; 
+    animation: fadein 3s;
+    }
+    @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+    }
+
+    @-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.topRight {
+    animation: fadein 2s;
+}
+.botLeft {
+    animation: fadein 1s;
+}
+.botRight {
+    background-image: url('https://i.imgur.com/5XeMcpD.jpg');
+    background-blend-mode: multiply;
+    animation: fadein 3s;
+}
+/* Vertical Mobile Browsing */
+@media only screen and (max-width: 480px){
+    .prof-crop{
+        margin-left: 158px;
+    }
+}
+
+/* Medium Browser */
+@media only screen and (min-width: 481px) and (max-width: 991px ){
+    .prof-crop {
+        margin-left: 310px;
+    }
+}
+
+/* Wide Browser */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .prof-crop {
+        margin-left: 430px;
+    }
+    .botRight {
+        background-size: 120%;
+    }
+}
+
+/* Wide Browser */
+@media only screen and (min-width: 1200px){
+    .prof-crop {
+        margin-left: 520px;
+    }
+    .botRight {
+        background-size: 100%;
+    }
+}

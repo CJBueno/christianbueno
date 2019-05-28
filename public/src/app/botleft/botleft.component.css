@@ -1,0 +1,41 @@
+.quadTitle, .keyWord {
+    font-family: 'EB Garamond', serif;
+    color: rgb(30,114,93);
+    margin-top: 25px; 
+    margin-bottom: 0;
+}
+.myName {
+    font-size: 1.2rem;
+}
+.fillText {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85em;
+    margin-bottom: 0;
+}
+.techIcons {
+    margin-top: 20px;
+    font-size: 1.7rem;
+}
+.icon:hover {
+    font-size: 1.2em;
+}
+/* Medium Browser */
+@media only screen and (min-width: 481px) and (max-width: 991px ){
+    .techIcons {
+        font-size: 2.6rem;
+    }
+}
+
+/* Wide Browser */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .techIcons {
+        font-size: 2.8rem;
+    }
+}
+
+/* Wide Browser */
+@media only screen and (min-width: 1200px){
+    .techIcons {
+        font-size: 3rem;
+    }
+}

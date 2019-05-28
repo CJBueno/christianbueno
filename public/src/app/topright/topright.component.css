@@ -1,0 +1,101 @@
+li {
+    font-size: 0.7rem;
+}
+.backPic {
+    max-width: 100%;
+    overflow-x: hidden;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
+.quadTitle, .keyWord {
+    font-family: 'EB Garamond', serif;
+    color: rgb(30,114,93);
+    /* margin-top: 25px;  */
+    margin-bottom: 0;
+}
+.myName {
+    font-size: 1.2rem;
+}
+.likes {
+    margin-bottom: 8px;
+}
+.likes:hover {
+    font-size: 0.9rem;
+}
+.fillText {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85em;
+    margin-bottom: 0;
+}
+.interests {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+.techIcons {
+    font-size: 1.7rem;
+}
+.colored:hover {
+    font-size: 1.2em;
+}
+.carousel-item, .carousel-inner, .carousel, .carouselDiv, .d-block {
+    border-radius: 10px;
+}
+.d-block {
+    height: 100%;
+}
+.cursor::after {
+    content:'';
+    display:inline-block;
+    margin-left:3px;
+    background-color:black;
+    animation-name:blink;
+    animation-duration:0.5s;
+    animation-iteration-count: infinite;
+  }
+  h1.cursor::after {
+    height:24px;
+    width:13px;
+  }
+  p.cursor::after {
+    height:13px;
+    width:2px;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity:1;
+    }
+    49% {
+      opacity:1;
+    }
+    50% {
+      opacity:0;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+
+/* Medium Browser */
+
+@media only screen and (min-width: 481px) and (max-width: 991px ){
+    .techIcons {
+        font-size: 2.1rem;
+    }
+}
+
+/* Wide Browser */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .techIcons {
+        font-size: 2.3rem;
+    }
+}
+
+/* Wide Browser */
+@media only screen and (min-width: 1200px){
+    .techIcons {
+        font-size: 2.5rem;
+    }
+}
